@@ -3,4 +3,4 @@
 
 celsius = input("Introduceti temperatura in grade Celsius: ")
 fahrenheit = int(celsius)*9/5+32
-print("Temperatura in grade Fahrenheit = " + str(fahrenheit))
+print(f"Temperatura in grade Fahrenheit = {str(fahrenheit)}")

@@ -4,4 +4,4 @@
 PI = 3.14159265359
 raza = input("Introduceti raza cercului: ")
 aria = PI * pow(int(raza), 2)
-print("Aria cercului = " + str(aria))
+print(f"Aria cercului = {str(aria)}")

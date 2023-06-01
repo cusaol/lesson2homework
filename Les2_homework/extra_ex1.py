@@ -3,9 +3,9 @@
 
 a = input("Introduceti a: ")
 b = input("Introduceti b: ")
-print("a = " + a + "; b =  " + b)
+print(f"a = {a}; b =  {b}")
 
 temp = a
 a = b
 b = temp
-print("a = " + a + "; b =  " + b)
+print(f"a = {a}; b =  {b}")

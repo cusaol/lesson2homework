@@ -8,7 +8,6 @@ CONST_MATEMATICA = 5
 current_nr = 1
 print(current_nr * CONST_MATEMATICA)
 current_nr += 1
-print(current_nr * CONST_MATEMATICA)
 current_nr += 1
 print(current_nr * CONST_MATEMATICA)
 current_nr += 1

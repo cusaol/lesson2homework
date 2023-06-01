@@ -2,4 +2,4 @@
 # afișa numele utilizatorului introdus la consola.
 
 username = input("Introduceți numele dumneavoastră: ")
-print("Welcome " + username)
+print(f"Welcome {username}")

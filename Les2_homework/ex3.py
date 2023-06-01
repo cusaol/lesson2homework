@@ -10,4 +10,4 @@
 
 emailadress = input("Introduceți adresa de email: ")
 username = input("Introduceți numele de utilizator: ")
-print("Emailul pentru " + username + " a fost expediat cu succes pe adresa de email " + emailadress)
+print(f"Emailul pentru {username} a fost expediat cu succes pe adresa de email {emailadress}")
