@@ -1,6 +1,2 @@
-
-text = "Nume:\tJohn\nVârstă:\t25"
-print(text)
-
-text = 'El a spus, \'Bună!\''
-print(text)
+text = "asta e o propozitie"
+print(text.count("e"))
