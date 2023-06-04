@@ -8,13 +8,13 @@ Note: Indiferent daca e majuscula sau minusucula litera
 """
 
 sir = input("Introduceți sirul de caractere: ")
+lowersir = sir.lower()
 litere = len(sir)
 vocale = 0
 consoane = 0
-for i in sir:
-    if(i == 'a'or i == 'e'or i == 'i'or i == 'o'or i == 'u' or
-       i == 'A'or i == 'E'or i == 'I'or i == 'O'or i == 'U' ):
-           vocale=vocale+1;
+for i in lowersir:
+    if(i == 'a'or i == 'e'or i == 'i'or i == 'o'or i == 'u'):
+           vocale += 1;
     else:
-        consoane=consoane+1;
+        consoane += 1;
 print (f"Sirul de caractere {sir} are lungimea {litere}, compus din {vocale} vocale si {consoane} consoane.")

@@ -9,5 +9,7 @@ Scrieți un program care
 
 sir = input("Introduceți sirul de caractere: ")
 caracter = input("Introduceți caracterul pe care doresti sa-l numeri: ")
-numar = sir.count(caracter)
+uppersir = sir.upper()
+uppercaracter = caracter.upper()
+numar = uppersir.count(uppercaracter)
 print(f"Sirul de caractere <{sir}> contine de {numar} ori caracterul <{caracter}>.")
