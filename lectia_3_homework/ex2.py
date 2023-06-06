@@ -9,10 +9,11 @@ Note: Indiferent daca e majuscula sau minusucula litera
 
 sir = input("Introduceți sirul de caractere: ")
 lowersir = sir.lower()
+newsir = lowersir.replace(" ", "").replace(".","").replace(",","").replace("!","").replace("?","")
 litere = len(sir)
 vocale = 0
 consoane = 0
-for i in lowersir:
+for i in newsir:
     if(i == 'a'or i == 'e'or i == 'i'or i == 'o'or i == 'u'):
            vocale += 1;
     else:
