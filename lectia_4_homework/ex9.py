@@ -6,14 +6,20 @@ cât și litere mici, afișați mesajul „Parolă puternică”.
 """
 
 parola = input("Introduceti o parola: ")
-contor = 0
-for x in parola:
-    for y in parola:
-        if len(parola) >= 8 and x.isupper() and y.islower():
-            contor += 1
-        else:
-            contor += 0
-if contor > 0:
+if x in parola.islower() and y in parola.isupper() and len(parola) >= 8:
     print(f"Parola puternica.")
 else:
     print(f"Parola slaba.")
+
+# parola = input("Introduceti o parola: ")
+# contor = 0
+# for x in parola:
+#     for y in parola:
+#         if len(parola) >= 8 and x.isupper() and y.islower():
+#             contor += 1
+#         else:
+#             contor += 0
+# if contor > 0:
+#     print(f"Parola puternica.")
+# else:
+#     print(f"Parola slaba.")

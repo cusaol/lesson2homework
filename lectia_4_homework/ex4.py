@@ -4,9 +4,15 @@ Scrieţi un program care verifică dacă litera "a" se află pe a 2-a poziţie �
 
 # case sensitive
 propozitie = input("Introduceti propozitia: ")
-print(f"'a' este a doua litera a propozitiei: {'a' == propozitie[1]}")
+if len(propozitie) < 2:
+    print(f"Acesta este un caracter!")
+else:
+    print(f"'a' este a doua litera a propozitiei: {'a' == propozitie[1]}")
 
 # != case sensitive
 # propozitieinit = input("Introduceti propozitia: ")
 # propozitie = propozitieinit.lower()
-# print(f"'a' este a doua litera a propozitiei: {'a' == propozitie[1]}")
+# if len(propozitie) < 2:
+#     print(f"Acesta este un caracter!")
+# else:
+#     print(f"'a' este a doua litera a propozitiei: {'a' == propozitie[1]}")

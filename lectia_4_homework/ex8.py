@@ -6,7 +6,7 @@ afișați mesajul „Aceasta este o întrebare”.
 """
 
 propozitie = input("Introduceti o propozitie: ")
-if propozitie[:-2:-1] == "?":
+if propozitie[-1] == "?":
     print(f"Aceasta este o întrebare.")
 else:
     print(f"Aceasta nu este o întrebare.")
