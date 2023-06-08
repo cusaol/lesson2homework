@@ -5,12 +5,11 @@ Citiţi după aceasta de la tastatură **numele**, **prenumele**, **vârsta**, *
 şi adăugaţi aceste valori în lista creată.
 """
 
-date_personale = list()
+date_personale = []
 nume = input("Introduceti numele utilizatorului: ")
 prenume = input("Introduceti prenumele utilizatorului: ")
-varsta = input("Introduceti varsta utilizatorului: ")
-inaltime = input("Introduceti inaltimea utilizatorului: ")
+varsta = int(input("Introduceti varsta utilizatorului: "))
+inaltime = int(input("Introduceti inaltimea utilizatorului: "))
 ocupatie = input("Introduceti ocupatia utilizatorului: ")
-new_list = [nume, prenume, varsta, inaltime, ocupatie]
-date_personale = date_personale.extend(new_list)
-print(f"Lista obtinuta: {date_personale}")
+date_personale = [nume, prenume, varsta, inaltime, ocupatie]
+print(f"Datele personale: {date_personale}")
