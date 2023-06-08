@@ -45,7 +45,7 @@ elif nota1 < nota2:
     print(f"Elevul {prenume2m} {nume2m} are o nota mai mare la examen.\nElevul {prenume1m} {nume1m} "
           f"are o nota mai mica la examen.")
 else:
-    print(f" Elevii {prenume1m} {nume1m} si {prenume2m} {nume2m} au primit aceeasi nota la examen.")
+    print(f"Elevii {prenume1m} {nume1m} si {prenume2m} {nume2m} au primit aceeasi nota la examen.")
 
 # indexare
 print(f"|  {elev1[0]}  |  {elev1[1]}  |  {elev1[2]}  |")
