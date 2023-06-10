@@ -24,6 +24,7 @@ for name in list_of_names:
     mark = int(input(f"Introduceti nota pentru {name}: "))
     list_of_marks.append(mark)
 
+# nu functioneaza pentru 2 elevi cu acelasi nume
 for name in list_of_names:
     indexn = list_of_names.index(name)
     print(f"{name} are nota {list_of_marks[indexn]}.")
