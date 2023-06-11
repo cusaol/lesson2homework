@@ -13,6 +13,7 @@ Pentru a calcula Indicele de Masă Corporală (BMI), urmează pașii de mai jos:
 3. Calculează BMI-ul: BMI = greutate / înălțime^2, unde greutatea este în kilograme și înălțimea este în metri.
 4. Rezultatul obținut va fi indicele de masă corporală al persoanei.
 """
+
 # pas 1
 greutate = float(input("Introduceti greutatea corpului in kilograme: "))
 inaltime = float(input("Introduceti inaltimea in metri: "))

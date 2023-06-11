@@ -9,12 +9,27 @@ Combină soluția cu soluția din lecția live
 și permite utilizatorului să decidă ce conversie să facă.
 De la 24 de ore la 12 ore, sau invers.
 """
+import re
 
-"""
-Write a program that takes a time in 24-hour format as input (e.g., 13:45)
-and converts it to 12-hour format (e.g., 1:45 PM).
+# V2
+orainit = input('Ora in format HH:MM PM/AM: ')
+lista_ora = re.split(': ', orainit)
+print(lista_ora)
+ora, minute, perioada = lista_ora[0], lista_ora[1], lista_ora[2]
 
-"""
+pm = 'AM'
+
+if hours >= '12':
+    if hours != '12':
+        hours = str(int(hours) - 12)
+    pm = 'PM'
+
+print(f"{hours}:{minutes} {pm}")
+
+# Harder acasa
+time = input('time in format HH:MM AM/PM')
+
+# V1
 time = input('Time in format HH:MM')
 hours_and_minutes_list = time.split(':')
 hours, minutes = hours_and_minutes_list[0], hours_and_minutes_list[1]
