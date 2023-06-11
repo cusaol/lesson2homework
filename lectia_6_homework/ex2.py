@@ -13,24 +13,18 @@ import re
 
 # V2
 orainit = input('Ora in format HH:MM PM/AM: ')
-lista_ora = re.split(': ', orainit)
-print(lista_ora)
+lista_ora = [int(orainit[:2])]
+lista_ora.append(int(orainit[3:5]))
+lista_ora.append(orainit[-2:])
 ora, minute, perioada = lista_ora[0], lista_ora[1], lista_ora[2]
 
-pm = 'AM'
+if perioada == "PM":
+    ora = str(int(ora) + 12)
 
-if hours >= '12':
-    if hours != '12':
-        hours = str(int(hours) - 12)
-    pm = 'PM'
-
-print(f"{hours}:{minutes} {pm}")
-
-# Harder acasa
-time = input('time in format HH:MM AM/PM')
+print(f"Ora: {ora}:{minute}")
 
 # V1
-time = input('Time in format HH:MM')
+time = input('Time in format HH:MM ')
 hours_and_minutes_list = time.split(':')
 hours, minutes = hours_and_minutes_list[0], hours_and_minutes_list[1]
 
@@ -42,6 +36,3 @@ if hours >= '12':
     pm = 'PM'
 
 print(f"{hours}:{minutes} {pm}")
-
-# Harder acasa
-time = input('time in format HH:MM AM/PM')
