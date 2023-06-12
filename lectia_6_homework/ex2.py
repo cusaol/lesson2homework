@@ -9,30 +9,28 @@ Combină soluția cu soluția din lecția live
 și permite utilizatorului să decidă ce conversie să facă.
 De la 24 de ore la 12 ore, sau invers.
 """
-import re
 
-# V2
-orainit = input('Ora in format HH:MM PM/AM: ')
-lista_ora = [int(orainit[:2])]
-lista_ora.append(int(orainit[3:5]))
-lista_ora.append(orainit[-2:])
-ora, minute, perioada = lista_ora[0], lista_ora[1], lista_ora[2]
-
-if perioada == "PM":
-    ora = str(int(ora) + 12)
-
-print(f"Ora: {ora}:{minute}")
-
-# V1
-time = input('Time in format HH:MM ')
-hours_and_minutes_list = time.split(':')
-hours, minutes = hours_and_minutes_list[0], hours_and_minutes_list[1]
-
-pm = 'AM'
-
-if hours >= '12':
-    if hours != '12':
-        hours = str(int(hours) - 12)
-    pm = 'PM'
-
-print(f"{hours}:{minutes} {pm}")
+alegere = input("Pentru a converti din format 12h in 24h tasteaza 1.\nPentru a converti din format 12h in 24h "
+                "tasteaza 2. ")
+if alegere == "1":
+    ora = input("Introduceti ora in format 'HH:MM AM/PM': ")
+    formatat = ""
+    perioada = ora[-2:]
+    if perioada == "PM":
+        formatat = str(int(ora[:2]) + 12) + ora[2:5]
+    else:
+        formatat = str(int(ora[:2])) + ora[2:5]
+    print(f"Ora formatata este: {formatat}")
+elif alegere == "2":
+    ora = input("Introduceti ora in format 'HH:MM': ")
+    formatat = ""
+    perioada = ""
+    if ora[:2] > "12":
+        perioada = "PM"
+        formatat = str(int(ora[:2]) - 12) + ora[2:]
+    else:
+        perioada = "AM"
+        formatat = str(int(ora[:2])) + ora[2:]
+    print(f"Ora formatata este: {formatat} {perioada}")
+else:
+    print("Ai introdus un carcter gresit!")
