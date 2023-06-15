@@ -12,13 +12,13 @@ nr_incercari = 10
 print("Urmeaza sa ghicesti un numar de la 1 la 100.\nAi 10 incercari.")
 
 contor = 0
-castig = True
-while contor < nr_incercari and castig:
+cast                                                                      = True
+while contor < nr_incercari and cast:
     contor += 1
     incercare = int(input(f"Incercarea {contor: }: "))
     if x == incercare:
         print("Felicitari! Ai castigat!")
-        castig = False
+        cast = False
     elif x > incercare:
         print("mai mare")
     elif x < incercare:
