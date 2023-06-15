@@ -11,10 +11,12 @@ list_numere = map(int, str_list_numere)
 
 produs = 1
 flag = 1
+ind = 0
 while flag:
-    produs *= flag
+    produs *= list_numere[ind]
     if produs > 100:
         print("Produsul elementelor > 100!")
         break
     flag += 1
+    ind += 1
 print(f"Produsul elementelor este {produs}")
