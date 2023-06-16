@@ -5,10 +5,9 @@ calculul și să afișeze un mesaj care indică că produsul este prea mare. Fol
 break pentru a încheia bucla când este necesar.
 """
 
-numere = input("Introduceti un sir de numere separate prin virgula: ")
-str_list_numere = numere.split(",")
-list_numere = list(map(int, str_list_numere))
-# list_numere = [int(a) for a in str_list_numere]
+numere = input("Introduceti un sir de numere separate prin virgula: ").split(",")
+list_numere = list(map(int, numere))
+# list_numere = [int(a) for a in numere]
 
 produs = 1
 ind = 0

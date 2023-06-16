@@ -5,9 +5,8 @@ să afișeze un mesaj care indică că produsul este prea mare. Folosește o buc
 a încheia bucla când este necesar.
 """
 
-numere = input("Introduceti un sir de numere separate prin virgula: ")
-str_list_numere = numere.split(",")
-list_numere = map(int, str_list_numere)
+numere = input("Introduceti un sir de numere separate prin virgula: ").split(",")
+list_numere = map(int, numere)
 
 produs = 1
 for el in list_numere:
@@ -15,5 +14,6 @@ for el in list_numere:
     if produs > 100:
         print("Produsul elementelor > 100!")
         break
-if produs <= 100:
+else:
     print(f"Produsul elementelor este {produs}")
+# if produs <= 100:

@@ -7,10 +7,8 @@ Odată ce numărul este mai mare decât 8, programul ar trebui să încheie bucl
 import random
 
 x = 0
-contor = 1
-while contor:
+while True:
     x = random.randint(1, 10)
     print(x)
     if x > 8:
         break
-    contor += 1
