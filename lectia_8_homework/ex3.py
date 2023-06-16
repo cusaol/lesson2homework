@@ -7,16 +7,16 @@ break pentru a încheia bucla când este necesar.
 
 numere = input("Introduceti un sir de numere separate prin virgula: ")
 str_list_numere = numere.split(",")
-list_numere = map(int, str_list_numere)
+list_numere = list(map(int, str_list_numere))
+# list_numere = [int(a) for a in str_list_numere]
 
 produs = 1
-flag = 1
 ind = 0
-while flag:
+while ind < len(list_numere):
     produs *= list_numere[ind]
     if produs > 100:
         print("Produsul elementelor > 100!")
         break
-    flag += 1
     ind += 1
-print(f"Produsul elementelor este {produs}")
+if produs <= 100:
+    print(f"Produsul elementelor este {produs}")

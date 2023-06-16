@@ -15,4 +15,5 @@ for el in list_numere:
     if produs > 100:
         print("Produsul elementelor > 100!")
         break
-print(f"Produsul elementelor este {produs}")
+if produs <= 100:
+    print(f"Produsul elementelor este {produs}")
