@@ -20,15 +20,25 @@ Adresă de email validă: True
 Introduceți o adresă de email: johndoe@example
 Adresă de email validă: False
 """
-import string
-
-def is_valid_email(email: str):
-    for a in email:
-        if a.count("@") == 1:
-            return True
-    else:
+def is_valid_email(email):
+    if email.count("@") != 1:
         return False
 
-adresa = input("Introduceți o adresă de email: ")
-rezultat = is_valid_email(adresa)
-print("Adresă de email validă:", rezultat)
+    username, domain = email.split("@")
+
+    if "." not in domain:
+        return False
+
+    last_dot_index = domain.rindex(".")
+    domain_name = domain[last_dot_index + 1:]
+
+    if len(domain_name) < 2:
+        return False
+
+    return True
+
+
+email = input("Enter an email address: ")
+
+valid_email = is_valid_email(email)
+print(f"Valid email address: {valid_email}")
