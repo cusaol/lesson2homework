@@ -8,3 +8,23 @@ Creați un program cu următoarele operații:
 import pandas as pd
 
 df = pd.read_excel('lectia_25.xlsx')
+
+# coloana rezultat
+list_of_rez = []
+
+for index, name in enumerate(df['name']):
+    rez = int(input(f'Introdu rezultatul elevului {index}: '))
+    list_of_rez.append(rez)
+
+df['rezultat'] = list_of_rez
+
+# sterge rand
+delete_row = int(input('Introdu index de sters: '))
+
+df1 = df.drop(delete_row)
+
+# lista calificari
+calificat = df[df['qualify'] == 'yes']
+qual = calificat.drop(['attempts', 'qualify', 'rezultat'], axis=1)
+qual.to_excel('qualified_students.xlsx')
+
