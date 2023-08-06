@@ -15,7 +15,6 @@ list_of_rez = []
 for index, name in enumerate(df['name']):
     rez = int(input(f'Introdu rezultatul elevului {index}: '))
     list_of_rez.append(rez)
-
 df['rezultat'] = list_of_rez
 
 # sterge rand
